@@ -1,15 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "../src/components/Navbar.jsx";
+import Footer from "../src/components/Footer.jsx";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Businesses from "./pages/Businesses";
-import Digital from "./pages/Digital";
-import Contact from "./pages/Contact";
-import Portfolio from "./pages/Portfolio";
-import NotFound from "./pages/NotFound";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Businesses from "./pages/Businesses.jsx";
+import Digital from "./pages/Digital.jsx";
+import Contact from "./pages/Contact.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 
 function App(){
