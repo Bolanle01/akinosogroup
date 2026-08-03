@@ -6,21 +6,14 @@ import DigitalPreview from "../components/DigitalPreview";
 
 function Home(){
 
-return(
-
-<>
-
-<Hero />
-
-<AboutSection />
-
-<BusinessPreview />
-
-<DigitalPreview />
-
-</>
-
-)
+    return(
+        <>
+            <Hero />
+            <AboutSection />
+            <BusinessPreview />
+            <DigitalPreview />
+        </>
+    )
 
 }
 

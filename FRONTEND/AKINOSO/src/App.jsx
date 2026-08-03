@@ -12,47 +12,27 @@ import Packages from "./pages/Packages.jsx";
 import Blog from "./pages/Blog.jsx";
 import Academy from "./pages/Academy";
 
-
 function App(){
 
-return(
-
-<BrowserRouter>
-
-<Navbar />
-
-
-<Routes>
-
-<Route path="/" element={<Home />} />
-
-<Route path="/about" element={<About />} />
-
-<Route path="/businesses" element={<Businesses />} />
-
-<Route path="/digital" element={<Digital />} />
-
-<Route path="/academy" element={<Academy />} />
-
-<Route path="/businesses/digital" element={<Digital />} />
-
-<Route path="/contact" element={<Contact />} />
-
-<Route path="/portfolio" element={<Portfolio />} />
-
-<Route path="/packages" element={<Packages />} />
-
-<Route path="/blog" element={<Blog />} />
-
-<Route path="*" element={<NotFound />} />
-
-</Routes>
-
-<Footer />
-
-</BrowserRouter>
-
-)
+    return(
+        <BrowserRouter>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/businesses" element={<Businesses />} />
+                <Route path="/digital" element={<Digital />} />
+                <Route path="/academy" element={<Academy />} />
+                <Route path="/businesses/digital" element={<Digital />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/packages" element={<Packages />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Footer />
+        </BrowserRouter>
+    )
 
 }
 
