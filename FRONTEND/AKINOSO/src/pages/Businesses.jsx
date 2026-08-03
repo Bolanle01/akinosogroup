@@ -1,5 +1,5 @@
 import BusinessesHero from "../components/BusinessesHero";
-import BusinessList from "../components/BusinessList";
+import BusinessPreview from "../components/BusinessPreview";
 import Expansion from "../components/Expansion";
 
 
@@ -11,7 +11,7 @@ return(
 
 <BusinessesHero />
 
-<BusinessList />
+<BusinessPreview />
 
 <Expansion />
 

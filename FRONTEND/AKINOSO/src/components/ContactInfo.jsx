@@ -14,7 +14,7 @@ Email
 </h3>
 
 <p className="mt-3 text-gray-600">
-info@akinosogroup.com
+akinosogroup@gmail.com
 </p>
 
 </div>
@@ -27,7 +27,7 @@ Phone
 </h3>
 
 <p className="mt-3 text-gray-600">
-+234 XXX XXX XXXX
++234 912 7700 704
 </p>
 
 </div>
@@ -40,7 +40,7 @@ Location
 </h3>
 
 <p className="mt-3 text-gray-600">
-Nigeria
+Lagos, Nigeria
 </p>
 
 </div>

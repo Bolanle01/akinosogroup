@@ -2,7 +2,7 @@ function ProjectCard({title, description, tech, image}){
 
 return(
 
-<div className="bg-white rounded-xl shadow overflow-hidden hover:shadow-lg transition">
+<div className="bg-white rounded-xl cursor-pointer shadow overflow-hidden hover:shadow-lg transition">
 
 
 <div className="h-48 bg-gray-200 flex items-center justify-center">

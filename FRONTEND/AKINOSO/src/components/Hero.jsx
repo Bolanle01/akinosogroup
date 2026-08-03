@@ -1,3 +1,6 @@
+import groupLogo from "../assets/Logo/GROUP LOGO.png";
+import { Link } from "react-router-dom";
+
 function Hero(){
 
 return(
@@ -10,33 +13,35 @@ return(
 <div>
 
 <p className="text-[#D4AF37] uppercase tracking-widest mb-4">
-Welcome to Akinoso Group
+    Welcome to Akinoso Group
 </p>
 
 
 <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-Building Innovative Businesses For The Future
+    Building Innovative Businesses For The Future
 </h1>
 
 
 <p className="text-gray-300 mt-6 text-lg leading-8">
-Akinoso Group creates and develops businesses across
-technology, agriculture, consulting, energy and other
-industries while delivering solutions that create value.
+    Akinoso Group creates and develops businesses across
+    technology, agriculture, consulting, energy and other
+    industries while delivering solutions that create value.
 </p>
 
 
 <div className="mt-8 flex gap-4">
 
+<Link to="/businesses">
+    <button className="bg-[#D4AF37] cursor-pointer text-black px-6 py-3 rounded-lg font-semibold">
+        Explore Businesses
+    </button>
+</Link>
 
-<button className="bg-[#D4AF37] text-black px-6 py-3 rounded-lg font-semibold">
-Explore Businesses
-</button>
-
-
-<button className="border border-[#D4AF37] px-6 py-3 rounded-lg">
-Contact Us
-</button>
+<Link to="/contact">
+    <button className="border border-[#D4AF37] cursor-pointer px-6 py-3 rounded-lg">
+        Contact Us
+    </button>
+</Link>
 
 
 </div>
@@ -50,9 +55,9 @@ Contact Us
 
 <div className="w-80 h-80 rounded-full bg-[#D4AF37]/20 flex items-center justify-center">
 
-<h2 className="text-4xl font-bold text-[#D4AF37]">
-AG
-</h2>
+<img src={groupLogo} alt=""
+ className="w-80 h-80 rounded-full object-cover"
+ />
 
 </div>
 

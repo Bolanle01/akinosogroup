@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function DigitalHero(){
 
 return(
@@ -23,10 +25,11 @@ modern websites, user interfaces, branding and technology
 solutions.
 </p>
 
-
-<button className="mt-8 bg-[#D4AF37] text-black px-8 py-3 rounded-lg font-semibold">
-Start A Project
-</button>
+<Link to="/contact">
+    <button className="mt-8 bg-[#D4AF37] cursor-pointer text-black px-8 py-3 rounded-lg font-semibold">
+        Start A Project
+    </button>
+</Link>
 
 
 </div>

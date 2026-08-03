@@ -1,28 +1,36 @@
+import {Link} from "react-router-dom";
+
 const businesses=[
 
 {
 name:"Akinoso Digital",
-status:"Active"
+description:"Technology solutions",
+status:"Active",
+path:"/businesses/digital",
 },
 
 {
-name:"Akinoso Agro & Foods",
-status:"Coming Soon"
+name:"Akinoso Academy",
+status:"Coming Soon",
+path:"/businesses/academy",
 },
 
 {
-name:"Akinoso Consulting",
-status:"Coming Soon"
+name:"Akinoso Creative Studio",
+status:"Coming Soon",
+path:"/businesses/creative",
 },
 
 {
-name:"Akinoso Legal & Advisory",
-status:"Coming Soon"
+name:"Akinoso ",
+status:"Coming Soon",
+path:"/businesses/unknown",
 },
 
 {
-name:"Akinoso Energy",
-status:"Coming Soon"
+name:"Akinoso ",
+status:"Coming Soon",
+path:"/businesses/unknown",
 }
 
 ];
@@ -44,13 +52,14 @@ Our Businesses
 
 
 
-<div className="grid md:grid-cols-3 gap-8">
+
+<div className="grid md:grid-cols-3 cursor-pointer gap-8">
 
 
 {
 businesses.map((business)=>(
 
-
+<Link to={business.path}>
 <div 
 key={business.name}
 className="bg-white p-8 rounded-xl shadow hover:shadow-lg transition"
@@ -69,13 +78,13 @@ className="bg-white p-8 rounded-xl shadow hover:shadow-lg transition"
 
 </div>
 
+</Link>
 
 ))
 }
 
 
 </div>
-
 
 </div>
 

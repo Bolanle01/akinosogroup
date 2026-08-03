@@ -1,137 +1,137 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import groupLogo from "../assets/Logo/GROUP LOGO.png";
 
 function Navbar(){
 
+const [open, setOpen] = useState(false);
+
 return(
 
-<nav className="bg-[#081C3A] text-white px-6 py-5">
+<nav className="relative bg-[#081C3A] text-white px-6 py-5">
 
 <div className="max-w-7xl mx-auto flex justify-between items-center">
 
-
 {/* Logo */}
 
-<Link 
-to="/"
-className="text-2xl font-bold text-[#D4AF37]"
->
-Akinoso Group
+<Link
+  to="/"
+  className="flex items-center gap-3 font-bold text-[#D4AF37]"
+ >
+  <img
+    src={groupLogo}
+    alt="Akinoso Group Logo"
+    className="w-12 h-12 md:w-20 md:h-20 rounded-full"
+  />
+
+  <h2 className="text-lg md:text-3xl">
+    Akinoso Group
+  </h2>
 </Link>
-
-
 
 {/* Desktop Menu */}
 
 <div className="hidden md:flex gap-8 items-center">
 
-
 <Link to="/" className="hover:text-[#D4AF37]">
 Home
 </Link>
-
 
 <Link to="/about" className="hover:text-[#D4AF37]">
 About
 </Link>
 
-
 <Link to="/businesses" className="hover:text-[#D4AF37]">
 Businesses
 </Link>
-
 
 <Link to="/digital" className="hover:text-[#D4AF37]">
 Digital
 </Link>
 
-
 <Link to="/portfolio" className="hover:text-[#D4AF37]">
 Portfolio
 </Link>
 
+<Link to="/blog">
+Blog
+</Link>
+
+<Link to="/packages">
+Packages
+</Link>
 
 <Link to="/contact" className="hover:text-[#D4AF37]">
 Contact
 </Link>
 
-
 </div>
-
-
 
 
 {/* Mobile Hamburger */}
 
-<input 
-type="checkbox"
-id="menu-toggle"
-className="hidden peer"
-/>
+<div className="md:hidden">
 
+<button
+  onClick={() => setOpen(!open)}
+  className="md:hidden text-3xl"
+ >
+  {open ? "✕" : "☰"}
+</button>
 
-<label 
-htmlFor="menu-toggle"
-className="md:hidden cursor-pointer text-3xl"
->
-
-☰
-
-</label>
-
-
-
-{/* Mobile Menu */}
+{open && (
 
 <div className="
 absolute
-top-20
+top-full
 left-0
 w-full
 bg-[#081C3A]
-hidden
-peer-checked:block
-md:hidden
+flex
+flex-col
+p-6
+gap-5
+z-50
 ">
 
 
-<div className="flex flex-col p-6 gap-5">
-
-
-<Link to="/">
+<Link to="/" onClick={()=>setOpen(false)}>
 Home
 </Link>
 
-
-<Link to="/about">
+<Link to="/about" onClick={()=>setOpen(false)}>
 About
 </Link>
 
-
-<Link to="/businesses">
+<Link to="/businesses" onClick={()=>setOpen(false)}>
 Businesses
 </Link>
 
-
-<Link to="/digital">
+<Link to="/digital" onClick={()=>setOpen(false)}>
 Digital
 </Link>
 
-
-<Link to="/portfolio">
+<Link to="/portfolio" onClick={()=>setOpen(false)}>
 Portfolio
 </Link>
 
+<Link to="/packages" onClick={()=>setOpen(false)}>
+Packages
+</Link>
 
-<Link to="/contact">
+<Link to="/blog" onClick={()=>setOpen(false)}>
+Blog
+</Link>
+
+<Link to="/contact" onClick={()=>setOpen(false)}>
 Contact
 </Link>
 
-
 </div>
 
+)}
 
 </div>
-
 
 </div>
 

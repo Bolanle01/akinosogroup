@@ -43,7 +43,7 @@ className="w-full border p-4 rounded-lg"
 
 
 <button
-className="bg-[#081C3A] text-white px-8 py-3 rounded-lg hover:bg-[#D4AF37] hover:text-black transition"
+className="bg-[#081C3A] cursor-pointer text-white px-8 py-3 rounded-lg hover:bg-[#D4AF37] hover:text-black transition"
 >
 
 Send Message

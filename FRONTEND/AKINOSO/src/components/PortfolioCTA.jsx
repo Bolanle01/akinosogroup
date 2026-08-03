@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function PortfolioCTA(){
 
 return(
@@ -16,13 +18,11 @@ Have A Project In Mind?
 Let's build a digital solution for your business.
 </p>
 
-
-<button className="mt-8 bg-[#D4AF37] text-black px-8 py-3 rounded-lg font-semibold">
-
-Contact Akinoso Digital
-
-</button>
-
+<Link to="/contact">
+    <button className="mt-8 bg-[#D4AF37] cursor-pointer text-black px-8 py-3 rounded-lg font-semibold">
+        Contact Akinoso Digital
+    </button>
+</Link>
 
 </div>
 
