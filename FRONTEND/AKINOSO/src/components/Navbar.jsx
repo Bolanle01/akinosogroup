@@ -49,6 +49,10 @@ return(
                     Digital
                 </Link>
 
+                <Link to="/academy" className="hover:text-[#D4AF37]">
+                    Academy
+                </Link>
+
                 <Link to="/portfolio" className="hover:text-[#D4AF37]">
                     Portfolio
                 </Link>
@@ -109,6 +113,10 @@ return(
 
                     <Link to="/digital" onClick={()=>setOpen(false)}>
                         Digital
+                    </Link>
+
+                    <Link to="/academy" onClick={()=>setOpen(false)}>
+                        Academy
                     </Link>
 
                     <Link to="/portfolio" onClick={()=>setOpen(false)}>

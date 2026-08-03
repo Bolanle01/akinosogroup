@@ -10,6 +10,7 @@ import Portfolio from "./pages/Portfolio.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Packages from "./pages/Packages.jsx";
 import Blog from "./pages/Blog.jsx";
+import Academy from "./pages/Academy";
 
 
 function App(){
@@ -28,6 +29,10 @@ return(
 <Route path="/about" element={<About />} />
 
 <Route path="/businesses" element={<Businesses />} />
+
+<Route path="/digital" element={<Digital />} />
+
+<Route path="/academy" element={<Academy />} />
 
 <Route path="/businesses/digital" element={<Digital />} />
 

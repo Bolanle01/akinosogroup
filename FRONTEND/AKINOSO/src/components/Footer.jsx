@@ -69,27 +69,27 @@ return(
         <div className="flex flex-col gap-3 text-gray-300">
 
         <Link to="/" className="hover:text-[#D4AF37]">
-        Home
+            Home
         </Link>
 
         <Link to="/about" className="hover:text-[#D4AF37]">
-        About
+            About
         </Link>
 
         <Link to="/businesses" className="hover:text-[#D4AF37]">
-        Businesses
+            Businesses
         </Link>
 
         <Link to="/portfolio" className="hover:text-[#D4AF37]">
-        Portfolio
+            Portfolio
         </Link>
 
         <Link to="/blog" className="hover:text-[#D4AF37]">
-        Blog
+            Blog
         </Link>
 
         <Link to="/contact" className="hover:text-[#D4AF37]">
-        Contact
+            Contact
         </Link>
 
         </div>
@@ -108,10 +108,11 @@ return(
 
         <p>Akinoso Digital</p>
         <p>Akinoso Academy</p>
+        <p>Akinoso Fashion</p>
         <p>Akinoso Properties</p>
         <p>Akinoso Agro & Foods</p>
-        <p>Akinoso Consulting</p>
-        <p>Akinoso Energy</p>
+        <p>Akinoso Logistics</p>
+        <p>Akinoso Resin</p>
 
         </div>
 

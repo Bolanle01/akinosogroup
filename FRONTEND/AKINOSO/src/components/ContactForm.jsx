@@ -1,4 +1,14 @@
+import { useForm, ValidationError } from '@formspree/react';
+
 function ContactForm(){
+   const [state, handleSubmit] = useForm("xlgqqzbp");
+  if (state.succeeded) {
+  return (
+    <p className="text-center text-green-600 text-lg font-semibold py-10">
+      Thank you! Your message has been sent successfully.
+    </p>
+  );
+}
 
 return(
 
@@ -6,53 +16,61 @@ return(
 
 <div className="max-w-3xl mx-auto">
 
-
-<form className="space-y-5">
-
+<form  onSubmit={handleSubmit} className="space-y-5">
 
 <input
-type="text"
-placeholder="Your Name"
-className="w-full border p-4 rounded-lg"
+  type="text"
+  name="name"
+  placeholder="Your Name"
+  required
+  className="w-full border p-4 rounded-lg"
 />
-
 
 <input
-type="email"
-placeholder="Your Email"
-className="w-full border p-4 rounded-lg"
+  type="email"
+  name="email"
+  placeholder="Your Email"
+  required
+  className="w-full border p-4 rounded-lg"
 />
 
+<ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
 
 <input
-type="text"
-placeholder="Subject"
-className="w-full border p-4 rounded-lg"
+  type="text"
+  name="subject"
+  placeholder="Subject"
+  required
+  className="w-full border p-4 rounded-lg"
 />
-
 
 <textarea
-
-placeholder="Your Message"
-
-rows="5"
-
-className="w-full border p-4 rounded-lg"
-
+  name="message"
+  placeholder="Your Message"
+  required
+  rows="5"
+  className="w-full border p-4 rounded-lg"
 ></textarea>
 
+<ValidationError
+  prefix="Message"
+  field="message"
+  errors={state.errors}
+/>
 
 <button
-className="bg-[#081C3A] cursor-pointer text-white px-8 py-3 rounded-lg hover:bg-[#D4AF37] hover:text-black transition"
+  type="submit"
+  disabled={state.submitting}
+  className="bg-[#081C3A] text-white px-8 py-3 rounded-lg hover:bg-[#D4AF37] hover:text-black transition disabled:opacity-50 disabled:cursor-not-allowed"
 >
-
-Send Message
-
+  {state.submitting ? "Sending..." : "Send Message"}
 </button>
 
-
 </form>
-
 
 </div>
 
